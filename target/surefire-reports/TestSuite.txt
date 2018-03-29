@@ -1,4 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.509 sec - in TestSuite
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 35.908 sec <<< FAILURE! - in TestSuite
+setUp(Listeners.ListnerClass1)  Time elapsed: 19.736 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Process unexpectedly closed with status: 0
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'CPU0021', ip: '192.168.12.2', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4821c4 - <no info>
+   1:           0x482933 - <no info>
+   2:           0x445159 - <no info>
+   3:           0x44c838 - <no info>
+   4:           0x43026a - <no info>
+   5:           0x40ba4e - <no info>
+   6:           0x4119b9 - <no info>
+   7:           0x6d2c89 - <no info>
+   8:           0x426006 - <no info>
+   9:           0x6cd490 - <no info>
+  10:     0x7fff4f1c13d2 - BaseThreadInitThunk
+

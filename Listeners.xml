@@ -4,13 +4,13 @@
     <listeners>
         <listener class-name="Listeners.CustomListeners"></listener>
     </listeners>
-    <test name="testUsingFF">
+    <!-- <test name="testUsingFF">
          <parameter name="browser" value="FF"/>
         
         <classes>
             <class name="Listeners.ListnerClass1"></class>
             </classes>
-            </test>
+            </test> -->
              <test name="testUsingChrome">
      
         <parameter name="browser" value="Chrome"/> 

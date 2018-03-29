@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [ListnersPractice]">
+  <parameter name="browser" value="Chrome"/>
   <listeners>
     <listener class-name="Listeners.CustomListeners"/>
   </listeners>
-  <test name="test(failed)">
+  <test name="testUsingFF(failed)">
+    <parameter name="browser" value="FF"/>
     <classes>
       <class name="Listeners.ListnerClass1">
         <methods>
           <include name="test1"/>
+          <include name="tearDown"/>
           <include name="openSite"/>
+          <include name="setUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Listeners.ListnerClass1 -->
     </classes>
-  </test> <!-- test(failed) -->
+  </test> <!-- testUsingFF(failed) -->
 </suite> <!-- Failed suite [ListnersPractice] -->
