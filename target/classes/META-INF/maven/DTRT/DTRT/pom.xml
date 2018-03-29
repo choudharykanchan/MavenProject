@@ -21,10 +21,10 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.5.1</version>
             <configuration>
-               <source>${jdk.level}</source>
-               <target>${jdk.level}</target>
+               <source>1.8</source>
+               <target>1.8</target>
             </configuration>
-         </plugin>
+         </plugin> 
          <!-- Added Surefire Plugin configuration to execute tests -->
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -50,14 +50,13 @@
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.11</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
     <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.8</version>
-  <scope>test</scope>
-</dependency>
+    </dependency>
 
 <dependency>
     <groupId>org.apache.poi</groupId>
