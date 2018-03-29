@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="ListnersPractice">
+   
     <listeners>
         <listener class-name="Listeners.CustomListeners"></listener>
     </listeners>
-    <test name="test">
+    <test name="testUsingFF">
+         <parameter name="browser" value="FF"/>
+        
+        <classes>
+            <class name="Listeners.ListnerClass1"></class>
+            </classes>
+            </test>
+             <test name="testUsingChrome">
+     
+        <parameter name="browser" value="Chrome"/> 
         <classes>
             <class name="Listeners.ListnerClass1"></class>
             </classes>

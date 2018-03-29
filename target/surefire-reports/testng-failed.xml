@@ -8,7 +8,9 @@
     <classes>
       <class name="Listeners.ListnerClass1">
         <methods>
-          <include name="test2"/>
+          <include name="test1"/>
+          <include name="openSite"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- Listeners.ListnerClass1 -->
     </classes>

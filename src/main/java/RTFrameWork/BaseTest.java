@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import RTPages.CheckoutPage;
 import RTPages.HomePage;
@@ -22,7 +23,7 @@ import RTPages.InstallerPage;
 public class BaseTest {
 public	WebDriver driver;
 	String uRL;
-	String browser="FF";
+	//String browser="FF";
 	public HomePage homePage;
 	public VerifyPage verifyPage;
 	public NeedsPage needsPage;
@@ -31,13 +32,14 @@ public	WebDriver driver;
 	public InstallerPage installerPage;
 	public CheckoutPage checkoutPage;
 	
-	public BaseTest(String browser)
+	public BaseTest(/*String browser*/)
 	{
-		this.browser=browser;
+	/*	this.browser=browser;*/
 		this.uRL=Utilities.uRL;
 	}
 	@BeforeTest
-	public void setUp()
+	@Parameters({"browser"})
+	public void setUp(String browser)
 	{
 		switch(browser)
 		
@@ -52,11 +54,13 @@ public	WebDriver driver;
 			break;
 		}
 		driver.get(uRL);
+		System.out.println("Test setup for "+ browser);
 	}
 	
 	@AfterTest
 	public void tearDown()
 	{
+		System.out.println("Tear down the test ");
 		driver.close();
 	}
 

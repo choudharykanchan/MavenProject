@@ -24,10 +24,10 @@ import RTPages.VerifyPage;
 import junit.framework.Assert;
 
 public class CheckOut extends BaseTest{
-public  CheckOut()
+/*public  CheckOut()
 	{
 		super("FF");
-	}
+	}*/
 	
 	@Test
 	public void example() throws InterruptedException

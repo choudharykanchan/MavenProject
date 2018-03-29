@@ -7,10 +7,13 @@ import RTFrameWork.BaseTest;
 
 public class ListnerClass1 extends BaseTest{
 
-	public ListnerClass1(String browser) {
-		super(browser);
+	
+
+
+	/*public ListnerClass1() {
+		super("Chrome");
 		// TODO Auto-generated constructor stub
-	}
+	}*/
 
 
 	@Test

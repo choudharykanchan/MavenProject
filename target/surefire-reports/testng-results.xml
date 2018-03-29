@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="ListnersPractice" duration-ms="31" started-at="2018-03-29T10:05:01Z" finished-at="2018-03-29T10:05:01Z">
+  <suite name="ListnersPractice" duration-ms="36538" started-at="2018-03-29T11:18:56Z" finished-at="2018-03-29T11:19:33Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="31" started-at="2018-03-29T10:05:01Z" finished-at="2018-03-29T10:05:01Z">
+    <test name="testUsingFF" duration-ms="21369" started-at="2018-03-29T11:18:56Z" finished-at="2018-03-29T11:19:17Z">
       <class name="Listeners.ListnerClass1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:Listeners.ListnerClass1@7f63425a]" name="test1" duration-ms="12" started-at="2018-03-29T15:35:01Z" finished-at="2018-03-29T15:35:01Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Listeners.ListnerClass1@3796751b]" name="setUp" is-config="true" duration-ms="21052" started-at="2018-03-29T16:48:56Z" finished-at="2018-03-29T16:49:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openSite()[pri:0, instance:Listeners.ListnerClass1@3796751b]" name="openSite" duration-ms="3" started-at="2018-03-29T16:49:17Z" finished-at="2018-03-29T16:49:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Listeners.ListnerClass1@3796751b]" name="test1" duration-ms="7" started-at="2018-03-29T16:49:17Z" finished-at="2018-03-29T16:49:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Listeners.ListnerClass1@3796751b]" name="tearDown" is-config="true" duration-ms="279" started-at="2018-03-29T16:49:17Z" finished-at="2018-03-29T16:49:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Listeners.ListnerClass1 -->
-    </test> <!-- test -->
+    </test> <!-- testUsingFF -->
+    <test name="testUsingChrome" duration-ms="15124" started-at="2018-03-29T11:19:17Z" finished-at="2018-03-29T11:19:33Z">
+      <class name="Listeners.ListnerClass1">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Listeners.ListnerClass1@1324409e]" name="setUp" is-config="true" duration-ms="14738" started-at="2018-03-29T16:49:17Z" finished-at="2018-03-29T16:49:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openSite()[pri:0, instance:Listeners.ListnerClass1@1324409e]" name="openSite" duration-ms="0" started-at="2018-03-29T16:49:32Z" finished-at="2018-03-29T16:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Listeners.ListnerClass1@1324409e]" name="test1" duration-ms="0" started-at="2018-03-29T16:49:32Z" finished-at="2018-03-29T16:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Listeners.ListnerClass1@1324409e]" name="tearDown" is-config="true" duration-ms="381" started-at="2018-03-29T16:49:32Z" finished-at="2018-03-29T16:49:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Listeners.ListnerClass1 -->
+    </test> <!-- testUsingChrome -->
   </suite> <!-- ListnersPractice -->
 </testng-results>
