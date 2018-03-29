@@ -11,9 +11,9 @@ public class ListnerClass1 {
 		Assert.assertEquals("Hii", "Hii");
 	}
 	
-	@Test
+	/*@Test
 	public void test2()
 	{
 		Assert.assertEquals("Hii", "Bye");
-	}
+	}*/
 }
